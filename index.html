@@ -54,23 +54,35 @@
         <label>Are you Pro-Choice or Pro-Life?</label>
         <div class="radio">
           <label>
-            <input type="radio" name="abortion" value="proChoice">Pro-Choice
+            <input type="radio" name="abortion" value="3">Pro-Choice
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="abortion" value="proLife">Pro-Life
+            <input type="radio" name="abortion" value="1">Pro-Life
+          </label>
+        </div>
+        <label>Are you Pro-Gun Control or Anti-Gun Control?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gun" value="3">Pro-Gun Control
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="gun" value="1">Anti-Gun Control
           </label>
         </div>
         <label for="religion">What is your religion?</label>
           <select class="form-control" id="religion">
             <option selected disabled> Choose one:</option>
-            <option>Christian</option>
-            <option>Muslim</option>
-            <option>Buddhist</option>
-            <option>Atheist</option>
-            <option>Hindu</option>
+            <option value="1">Christian</option>
+            <option value="1">Muslim</option>
+            <option value="3">Buddhist</option>
+            <option value="3">Atheist</option>
+            <option value="3">Hindu</option>
           </select>
+        <button type="submit" class="btn btn-success">Submit!</button>
       </form>
 
     </div> <!---End of Body Container Div--->
