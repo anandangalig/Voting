@@ -13,6 +13,13 @@ $(document).ready(function(){
     event.preventDefault();
     var whichReligion = parseInt($("#religion").val());
     var whichLife = parseInt($("input:radio[name=abortion]:checked").val());
-    console.log(whichLife);
+    var whichGun = parseInt($("input:radio[name=gun]:checked").val());{
+      if(whichReligion + whichLife + whichGun >= 7) {
+        alert("Congratulations! You seem to be a liberal!");
+      } else {
+        alert("Congratulations! You are definitely a conservative!");
+      }
+    }
+
   });
 });
