@@ -1,11 +1,11 @@
 $(document).ready(function(){
-  $("form#age").submit(function(event) {
-  event.preventDefault();
-  var ageInput = parseInt($("#age").val());
-  if (ageInput >= 18) {
-    $('#vote').show();
-  } else {
-    $('#noVote').show();
-  }
+  $("form#ageForm").submit(function(event) {
+    event.preventDefault();
+    var ageInput = parseInt($("input#age").val());
+    if (ageInput >= 18) {
+      $("#vote").show();
+    } else {
+      $("#noVote").show();
+    }
   });
 });
